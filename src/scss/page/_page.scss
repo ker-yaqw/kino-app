@@ -126,6 +126,66 @@
 }
 
 
+
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 50;
+   left: 0;
+   top: 0;
+   width: 100%;
+   overflow: auto;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   transition: width 2s;
+}
+
+.modal--show {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+ }
+ 
+ .modal-content {
+   max-width: 600px;
+   padding: 16px;
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+   background-color: #1a191f;
+   color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   max-height: 80vh;
+   overflow-y: auto;
+   overflow-x: hidden;
+   &__wrapper {
+      padding: 5px;
+      text-align: center;
+   } 
+   &__image {
+     width: 200px;
+     margin: 0 auto;
+     margin-bottom: 12px;
+   }
+   &__list {
+     margin-left: 20px;
+   }
+   &__close {
+      position: absolute;
+      top: 5px;
+      right: 14px;
+      font-size: 30px;
+      color: #fff;
+      opacity: .7;
+      font-weight: 700;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+   }
+ }
+
+
 .footer-copyright {
    padding: 10px 0;
    padding-top: 35px;

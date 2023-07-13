@@ -9,7 +9,11 @@
          display: flex;
          justify-content: center;
       }
-}
+   }
+   .modal-content {
+      max-width: 502px;
+      padding: 10px;
+   }
 }
 
 @media (max-width: 580px) {
@@ -30,11 +34,24 @@
          align-items:center;
       }
    }
-
+   .modal-content {
+      max-width: 410px;
+      padding: 8px;
+   }
    .footer-copyright {
       &__text {
          max-width: 285px;
          margin: 0 auto;
       }
+   }
+
+}
+
+
+@media (max-width: 460px) {
+
+   .modal-content {
+      max-width: 320px;
+      padding: 8px;
    }
 }
